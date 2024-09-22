@@ -1,0 +1,5 @@
+# openai_config.py
+
+OPENAI_API_KEY = "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"
+ASSISTANT_ID = "asst_Ibsbv3KtyxTuXB7lj88yVZOi"
+THREAD_ID = "thread_cJEs0nsgvYDyFfxE1ZxKu4EF"

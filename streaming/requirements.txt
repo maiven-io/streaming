@@ -1,0 +1,13 @@
+pip install channels
+pip install channels_redis
+pip install daphne
+pip install celery[redis]
+pip install djangorestframework
+pip install openai
+pip install django-cors-headers
+pip install websocket
+pip install twisted[tls,http2]
+
+
+npm install axios
+npm install react-router-dom

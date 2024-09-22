@@ -1,0 +1,37 @@
+soo what we know we have / had 
+
+1. redis is online (but we dont know if it connected to our function in tasks.py )
+2. we have celery set up - it can recieve the function but it does not work properl
+    from what i udnerstand we are calling celery but it does not understand what it should do
+3. we had a positive test to perform shell request to openai sending a message and getting the streamed response 
+4. we have daphne setted up. from what i udnerstand it is just waiting for celery to pass inforamtion 
+
+
+
+
+
+What we need to do: 
+
+1. Make redis work! Redis needs to recieve data from openai stream and hold it to pass to celery 
+2. solve the celery bug - why it recieves something but it does not work 
+3. continue the approach - solve then celery - daphne connection 
+
+
+
+link to approach i take 
+
+https://docs.google.com/document/d/18_g4QeD7a_DrRjMy9njwujLTIt5-gO8Cl6Abcz-XWf8/edit
+
+
+
+you need to check if redis is cacheing the message. check also the tabs (hammer SaaS) and this git project 
+
+
+
+22/09 
+i updated the tasks.py and views.py 
+celery worker is recieving the task via shell command
+redis is connected to celery 
+
+WHAT we dont have now
+task is not being executed by celery. it just receving the task and then jack shit is happening
